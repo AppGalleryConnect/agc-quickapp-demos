@@ -1,4 +1,6 @@
-## Auth demo快速入门
+## 远程配置快速入门
+
+中文 | [English](./README.md)
 
 ## 目录
 
@@ -12,7 +14,7 @@
  * [备注](#备注)
 
 ## 简介
-大部分的应用都需要对用户的业务访问进行身份认证，以便为用户提供个性化体验。但是端到端完整构建一套用户认证系统会面临很多挑战。认证服务可以为您的应用快速构建安全可靠的用户认证系统，您只需在应用中访问认证服务的相关能力，而不需要关心云侧的设施和实现。
+您如果想打造一个出色的应用取得商业成功，需要持续为用户提供新鲜内容、新鲜功能，快速响应用户不断变化的需求和体验喜好，需要尽可能地为不同的目标用户提供差异化的用户体验。使用AppGallery Connect（简称AGC）的远程配置，您的应用即可无需升级，也可以在云端灵活修改应用的行为和外观，从而快速响应用户的需求。
 
 ## 环境要求
 * 一台安装了华为快应用IDE的计算机
@@ -21,32 +23,32 @@
 ## 快速入门
 在运行quickstart前，您需要
 1. 如果没有华为开发者联盟帐号，需要先[注册账号](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148) 并通过实名认证。
-2. 使用申请的帐号登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-get-started) 网站创建一个项目并添加应用，软件包类型选择“快应用”。
-3. 在我的项目中进入新建的项目，选择创建的快应用，进入“构建”>“认证服务”页面，点击“立即开通”，开启认证服务。
-4. 点击“项目设置”>“API管理”，开启auth Service。
+2. 使用申请的帐号登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/) 网站创建一个项目并添加应用，平台选择“快应用”，应用分类为“应用”。
+3. 在我的项目中进入新建的项目，选择创建的快应用，进入“增长”>“远程配置”页面，点击“立即开通”，开启远程配置。
+4. 点击“项目设置”>“API管理”，开启Remote Configuration。
 5. 点击“常规”，下载agconnect-services.json文件，用其替换[agconnect-services.json](./agconnect-services.json) 。
-6. 回到“构建”>“认证服务”页面，点击“认证方式”，启用“手机号码”、“邮箱地址”、“华为账号”、“匿名账号”。
-7. 在命令行中依次运行如下命令以运行demo：
+6. 回到“增长”>“远程配置”页面，设置[云端配置项](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-remoteconfig-web-cloudconfig-0000001056699160)
+7. 在命令行中依次运行如下命令以运行demo, 使用demo您可以[获取云端配置](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-remoteconfig-web-obtainconfig-0000001056621220).
     ``` 
     # 安装依赖
     npm install
     
-    # 安装 AGC auth sdk
-    npm install @agconnect/auth
+    # 安装 AGC remote config sdk
+    npm install @agconnect/remoteconfig@1.3.1 --save
     
     # 启动demo
     Ctrl+Shift+R
     ```
-8. 更多详情请点击[Auth](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-auth-quickapp-getstarted-0000001063528213) 。
+8. 更多详情请点击[Remote Config]()
 
 ## 示例代码
 
-代码: src\Auth\auth.ux
+代码: src\RemoteConfig\remoteconfig.ux
 
 ## 示例效果
 
-**authDemo**</br>
-<img src="image/authQuickApp.gif" alt="authDemo" height="782"/>
+**remoteconfigDemo**</br>
+<img src="image/remoteconfigQuickApp.gif" alt="remoteconfigDemo" height="782"/>
 
 ## 技术支持
 

@@ -1,4 +1,6 @@
-## Auth quickstart
+## Remote Config quickstart
+
+English | [中文](./README_ZH.md)
 
 ## Table of Contents
 
@@ -12,41 +14,41 @@
  * [Remarks](#Remarks)
 
 ## Introduction
-Most apps need to identify and authenticate users to tailor the app experience for individual users. However, building such a system from scratch is a difficult process. Auth Service can quickly build a secure and reliable user authentication system for your app. You only need to access Auth Service capabilities in your app without caring about the facilities and implementation on the cloud.
+AppGallery Connect Remote Configuration allows you to change the behavior and appearance of your app online without requiring users to update the app. With the service, you can provide tailored experience for your users in a timely manner.
 
 ## Preparing the Environments
 * A computer with Huawei QuickApp IDE
 * A device can run QuickApp
 
 ## Getting Started
-Before running the auth quickstart, you need to:
+Before running the remote config quickstart, you need to:
 1. If you do not have a HUAWEI Developer account, you need to [register an account](https://developer.huawei.com/consumer/en/doc/start/registration-and-verification-0000001053628148) and pass identity verification.
-2. Use your account to sign in to [AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-get-started), create a project and add an app, set app platform to Quick App.
-3. Select your project and app in My projects, and go to Build > Auth Service to enable the Authentication service.
-4. Select Project Settings,and go to Manage APIs, enable the Auth Service.
+2. Use your account to sign in to [AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/), create a project and add an app, set app platform to Quick App, set app category to App.
+3. Select your project and app in My projects, and go to Grow > Remote Configuration to enable the Remote Config.
+4. Select Project Settings, and go to Manage APIs, enable the Remote Configuration.
 5. Go to General information, download the agconnect-services.json file from AppGallery Connect, replace [agconnect-services.json](./agconnect-services.json) in this demo with agconnect-services.json file.
-6. Select your project and app in My projects, and go to Build > Auth Service > Authentication mode, enable Mobile number, Email address, Huawei account, WeChat, QQ, Anonymous account.
-7. Run the following code in terminal in the demo path, and demo will start.
+6. Select your project and app in My projects, and go to Grow > Remote Configuration, [create parameter values](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-web-cloudconfig-0000001056699160).
+7. Run the following code in terminal in the demo path, demo will start, then you can [fetch parameter values](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-web-obtainconfig-0000001056621220).
     ``` 
     # install dependencies
     npm install
     
-    # install AGC auth sdk
-    npm install @agconnect/auth
+    # install AGC remote config sdk
+    npm install @agconnect/remoteconfig@1.3.1 --save
     
     # run demo
     Ctrl+Shift+R
     ```
-8. More details about [Auth](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-quickapp-getstarted-0000001063528213)
+8. More details about [Remote Config]()
 
 ## Sample Code
 
-Sample code: src\Auth\auth.ux
+Sample code: src\RemoteConfig\remoteconfig.ux
 
 ## Result
 
-**authDemo**</br>
-<img src="image/authQuickApp.gif" alt="authDemo" height="782"/>
+**remoteconfigDemo**</br>
+<img src="image/remoteconfigQuickApp.gif" alt="remoteconfigDemo" height="782"/>
 
 ## Question or issues
 
@@ -57,7 +59,7 @@ If you have questions about how to use AppGallery Connect Demos, try the followi
 If you run into a bug in our samples, please submit an [issue](https://github.com/AppGalleryConnect/agc-demos/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/AppGalleryConnect/agc-demos/pulls) with a fix.
 
 ## License
-auth quickstart is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+remote config quickstart is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-##Remarks
+## Remarks
 When you create a serverless fast app with the Huawei fast application IDE, the directory structure of this demo corresponds to the client directory of serverless fast app.
