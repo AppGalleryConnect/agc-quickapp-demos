@@ -13,8 +13,8 @@ These are the available plugins in this repository.
 
 | Demo                             | Version                                                      | Documentation                                                |
 | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [AuthService](./AuthService)     | [![version](https://img.shields.io/badge/Release-1.2.1.300-yellow)](./agc-authservice-demo-javascript) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-auth-quickapp-getstarted-0000001063528213) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/agc-auth-service-webapi-overview-0000001054343230) |
-| [CloudFunction](./CloudFunction) | [![version](https://img.shields.io/badge/Release-1.2.1.300-yellow)](./agc-cloudfunction-demo-javascript) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-cloudfunction-appcall-quickapp) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/agc-cloudfunction-webapi-overview) |
+| [AuthService](./AuthService)     | [![version](https://img.shields.io/badge/Release-1.4.1-yellow)](./agc-authservice-demo-javascript) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-auth-quickapp-getstarted-0000001063528213) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/agc-auth-service-webapi-overview-0000001054343230) |
+| [CloudFunction](./CloudFunction) | [![version](https://img.shields.io/badge/Release-1.3.1-yellow)](./agc-cloudfunction-demo-javascript) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-cloudfunction-appcall-quickapp) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/agc-cloudfunction-webapi-overview) |
 
 ## Precautions
 
