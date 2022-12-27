@@ -21,9 +21,9 @@
     </div>
     <div class="newInfo">
       <div class="itemsCon">
-        <text class="leftLabel">area code:</text>
+        <text class="leftLabel">country code:</text>
         <div class="containDiv">
-          <input class="inputPlaceholder" @change="setAreaCode" value="{{areaCode}}"></input>
+          <input class="inputPlaceholder" @change="setAreaCode" value="{{areaCode}}" placeholder="Please enter country code"></input>
           <div class="rightLine"></div>
         </div>
       </div>
@@ -31,7 +31,7 @@
       <div class="itemsCon">
         <text class="leftLabel">phone number:</text>
         <div class="containDiv">
-          <input class="inputPlaceholder" @change="setPhoneNumber" value="{{phoneNumber}}"></input>
+          <input class="inputPlaceholder" @change="setPhoneNumber" value="{{phoneNumber}}" placeholder="Please enter phone number"></input>
           <div class="rightLine"></div>
         </div>
       </div>
@@ -39,14 +39,17 @@
       <div class="itemsCon">
         <text class="leftLabel">password:</text>
         <div class="containDiv">
-          <input class="inputPlaceholder" @change="setPassword" type="password" value="{{password}}"></input>
+          <input class="inputPlaceholder" @change="setPassword" type="password" value="{{password}}" placeholder="Please enter password"></input>
           <div class="rightLine"></div>
         </div>
       </div>
     </div>
-    <div class="container ">
+    <div class="container">
       <div class="centerConfirm">
-        <input type="button" class="confirmBtn" id="confirm" value="submit" onclick="confirmFunc"></input>
+        <input type="button" class="signInAnnBtn" id="signInAnonymously" value="SignIn Anonymously" onclick="signInAnonymously"></input>
+      </div>
+      <div class="centerConfirm">
+        <input type="button" class="confirmBtn" id="confirm" value="SignIn" onclick="confirmFunc"></input>
       </div>
     </div>
   </div>
@@ -130,6 +133,19 @@
     left: 189px;
   }
 
+  .signInAnnBtn {
+    font-size: 31.7px;
+    color: #ffffff;
+    line-height: 40.6px;
+    width: 375px;
+    border-radius: 8.3px;
+    height: 66.7px;
+    background-color: #ff7400;
+    position: fixed;
+    bottom: 150px;
+    left: 189px;
+  }
+
   .container {
     flex-direction: column;
     padding: 0 33px;
@@ -137,7 +153,6 @@
 </style>
 
 <script>
-  import { BookInfo } from '../../../module/BookInfo';
   import router from "@system.router";
   module.exports = {
     data: {
@@ -166,6 +181,10 @@
     },
     async confirmFunc() {
       await this.$app.$def.cloudDBOperate.login(this.areaCode, this.phoneNumber, this.password);
+      router.back();
+    },
+    async signInAnonymously() {
+      await this.$app.$def.cloudDBOperate.signInAnonymously();
       router.back();
     }
   };

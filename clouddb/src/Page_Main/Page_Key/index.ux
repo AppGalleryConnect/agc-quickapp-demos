@@ -129,7 +129,6 @@
 </style>
 
 <script>
-  import { BookInfo } from '../../../module/BookInfo';
   import router from "@system.router";
   module.exports = {
     data: {

@@ -24,7 +24,7 @@
       <div class="itemsCon">
         <text class="leftLabel">zone name:</text>
         <div class="containDiv">
-          <input class="inputPlaceholder" value="{{zoneName}}" @change="setZoneName"></input>
+          <input class="inputPlaceholder" value="{{zoneName}}" @change="setZoneName" placeholder="Please enter zone name"></input>
           <div class="rightLine"></div>
         </div>
       </div>
@@ -125,7 +125,7 @@
   import router from "@system.router";
   module.exports = {
     data: {
-      zoneName: ''
+      zoneName: 'QuickStartDemo'
     },
 
     onInit() {

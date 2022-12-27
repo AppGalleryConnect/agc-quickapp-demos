@@ -17,14 +17,9 @@
 <script>
   import utils from './Common/utils.js';
   import operate from './operate.js';
-  import * as context from '../config/agconnect-services.json';
-  const injectRef = Object.getPrototypeOf(global) || global;
-  import agconnect from '@agconnect/api';
-  // injection regeneratorRuntime
-  injectRef.regeneratorRuntime = require('@babel/runtime/regenerator');
   module.exports = {
     onCreate() {
-      agconnect.instance().configInstance(context);
+      operate.initAGC();
       console.info('Application onCreate');
     },
     
